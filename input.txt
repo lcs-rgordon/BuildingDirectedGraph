@@ -1,245 +1,245 @@
 digraph img {
-1 -> {2;}
-2 -> {4;6;}
-3 -> {9;14;}
-4 -> {5;}
-5 -> {3;8;}
-6 -> {7;}
-7 -> {10;12;}
-8 -> {13;18;}
-9 -> {21;25;}
-10 -> {11;}
-11 -> {16;19;}
-12 -> {20;22;}
-13 -> {24;27;}
-14 -> {15;}
-15 -> {23;26;}
-16 -> {17;}
-17 -> {31;32;}
-18 -> {28;30;}
-19 -> {34;36;}
+1 -> {2;} [fontname="Helvetica"]
+2 -> {4;6;} [fontname="Helvetica"]
+3 -> {9;14;} [fontname="Helvetica"]
+4 -> {5;} [fontname="Helvetica"]
+5 -> {3;8;} [fontname="Helvetica"]
+6 -> {7;} [fontname="Helvetica"]
+7 -> {10;12;} [fontname="Helvetica"]
+8 -> {13;18;} [fontname="Helvetica"]
+9 -> {21;25;} [fontname="Helvetica"]
+10 -> {11;} [fontname="Helvetica"]
+11 -> {16;19;} [fontname="Helvetica"]
+12 -> {20;22;} [fontname="Helvetica"]
+13 -> {24;27;} [fontname="Helvetica"]
+14 -> {15;} [fontname="Helvetica"]
+15 -> {23;26;} [fontname="Helvetica"]
+16 -> {17;} [fontname="Helvetica"]
+17 -> {31;32;} [fontname="Helvetica"]
+18 -> {28;30;} [fontname="Helvetica"]
+19 -> {34;36;} [fontname="Helvetica"]
 20 [style="filled", fillcolor="red"]
 "Lorem\nipsum 20" [style=invis]
-20 -> "Lorem\nipsum 20" [color=white, minlen=1, taillabel="Lorem\nipsum\n20"]
-20 -> {}
-21 -> {33;38;}
+20 -> "Lorem\nipsum 20" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+20 -> {} [fontname="Helvetica"]
+21 -> {33;38;} [fontname="Helvetica"]
 22 [style="filled", fillcolor="red"]
 "Lorem\nipsum 22" [style=invis]
-22 -> "Lorem\nipsum 22" [color=white, minlen=1, taillabel="Lorem\nipsum\n22"]
-22 -> {}
+22 -> "Lorem\nipsum 22" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+22 -> {} [fontname="Helvetica"]
 23 [style="filled", fillcolor="red"]
 "Lorem\nipsum 23" [style=invis]
-23 -> "Lorem\nipsum 23" [color=white, minlen=1, taillabel="Lorem\nipsum\n23"]
-23 -> {}
+23 -> "Lorem\nipsum 23" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+23 -> {} [fontname="Helvetica"]
 24 [style="filled", fillcolor="red"]
 "Lorem\nipsum 24" [style=invis]
-24 -> "Lorem\nipsum 24" [color=white, minlen=1, taillabel="Lorem\nipsum\n24"]
-24 -> {}
-25 -> {6;}
-26 -> {39;40;}
-27 -> {42;43;}
-28 -> {29;}
-29 -> {44;45;}
+24 -> "Lorem\nipsum 24" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+24 -> {} [fontname="Helvetica"]
+25 -> {6;} [fontname="Helvetica"]
+26 -> {39;40;} [fontname="Helvetica"]
+27 -> {42;43;} [fontname="Helvetica"]
+28 -> {29;} [fontname="Helvetica"]
+29 -> {44;45;} [fontname="Helvetica"]
 30 [style="filled", fillcolor="red"]
 "Lorem\nipsum 30" [style=invis]
-30 -> "Lorem\nipsum 30" [color=white, minlen=1, taillabel="Lorem\nipsum\n30"]
-30 -> {}
+30 -> "Lorem\nipsum 30" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+30 -> {} [fontname="Helvetica"]
 31 [style="filled", fillcolor="red"]
 "Lorem\nipsum 31" [style=invis]
-31 -> "Lorem\nipsum 31" [color=white, minlen=1, taillabel="Lorem\nipsum\n31"]
-31 -> {}
-32 -> {46;48;}
-33 -> {51;53;}
-34 -> {35;}
-35 -> {49;50;}
-36 -> {37;}
+31 -> "Lorem\nipsum 31" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+31 -> {} [fontname="Helvetica"]
+32 -> {46;48;} [fontname="Helvetica"]
+33 -> {51;53;} [fontname="Helvetica"]
+34 -> {35;} [fontname="Helvetica"]
+35 -> {49;50;} [fontname="Helvetica"]
+36 -> {37;} [fontname="Helvetica"]
 37 [style="filled", fillcolor="red"]
 "Lorem\nipsum 37" [style=invis]
-37 -> "Lorem\nipsum 37" [color=white, minlen=1, taillabel="Lorem\nipsum\n37"]
-37 -> {}
-38 -> {52;54;}
+37 -> "Lorem\nipsum 37" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+37 -> {} [fontname="Helvetica"]
+38 -> {52;54;} [fontname="Helvetica"]
 39 [style="filled", fillcolor="red"]
 "Lorem\nipsum 39" [style=invis]
-39 -> "Lorem\nipsum 39" [color=white, minlen=1, taillabel="Lorem\nipsum\n39"]
-39 -> {}
-40 -> {41;}
-41 -> {55;56;}
-42 -> {57;58;}
-43 -> {6;}
-44 -> {59;60;}
-45 -> {62;64;}
-46 -> {47;}
-47 -> {63;66;}
-48 -> {50;}
+39 -> "Lorem\nipsum 39" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+39 -> {} [fontname="Helvetica"]
+40 -> {41;} [fontname="Helvetica"]
+41 -> {55;56;} [fontname="Helvetica"]
+42 -> {57;58;} [fontname="Helvetica"]
+43 -> {6;} [fontname="Helvetica"]
+44 -> {59;60;} [fontname="Helvetica"]
+45 -> {62;64;} [fontname="Helvetica"]
+46 -> {47;} [fontname="Helvetica"]
+47 -> {63;66;} [fontname="Helvetica"]
+48 -> {50;} [fontname="Helvetica"]
 49 [style="filled", fillcolor="red"]
 "Lorem\nipsum 49" [style=invis]
-49 -> "Lorem\nipsum 49" [color=white, minlen=1, taillabel="Lorem\nipsum\n49"]
-49 -> {}
-50 -> {8;}
-51 -> {67;68;}
-52 -> {74;75;}
-53 -> {69;70;}
-54 -> {71;72;}
-55 -> {76;77;}
-56 -> {78;79;}
+49 -> "Lorem\nipsum 49" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+49 -> {} [fontname="Helvetica"]
+50 -> {8;} [fontname="Helvetica"]
+51 -> {67;68;} [fontname="Helvetica"]
+52 -> {74;75;} [fontname="Helvetica"]
+53 -> {69;70;} [fontname="Helvetica"]
+54 -> {71;72;} [fontname="Helvetica"]
+55 -> {76;77;} [fontname="Helvetica"]
+56 -> {78;79;} [fontname="Helvetica"]
 57 [style="filled", fillcolor="red"]
 "Lorem\nipsum 57" [style=invis]
-57 -> "Lorem\nipsum 57" [color=white, minlen=1, taillabel="Lorem\nipsum\n57"]
-57 -> {}
+57 -> "Lorem\nipsum 57" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+57 -> {} [fontname="Helvetica"]
 58 [style="filled", fillcolor="red"]
 "Lorem\nipsum 58" [style=invis]
-58 -> "Lorem\nipsum 58" [color=white, minlen=1, taillabel="Lorem\nipsum\n58"]
-58 -> {}
-59 -> {80;82;}
-60 -> {61;}
-61 -> {81;84;}
+58 -> "Lorem\nipsum 58" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+58 -> {} [fontname="Helvetica"]
+59 -> {80;82;} [fontname="Helvetica"]
+60 -> {61;} [fontname="Helvetica"]
+61 -> {81;84;} [fontname="Helvetica"]
 62 [style="filled", fillcolor="red"]
 "Lorem\nipsum 62" [style=invis]
-62 -> "Lorem\nipsum 62" [color=white, minlen=1, taillabel="Lorem\nipsum\n62"]
-62 -> {}
-63 -> {87;88;}
-64 -> {65;}
-65 -> {62;83;86;}
-66 -> {31;}
-67 -> {6;}
+62 -> "Lorem\nipsum 62" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+62 -> {} [fontname="Helvetica"]
+63 -> {87;88;} [fontname="Helvetica"]
+64 -> {65;} [fontname="Helvetica"]
+65 -> {62;83;86;} [fontname="Helvetica"]
+66 -> {31;} [fontname="Helvetica"]
+67 -> {6;} [fontname="Helvetica"]
 68 [style="filled", fillcolor="red"]
 "Lorem\nipsum 68" [style=invis]
-68 -> "Lorem\nipsum 68" [color=white, minlen=1, taillabel="Lorem\nipsum\n68"]
-68 -> {}
-69 -> {96;97;}
-70 -> {98;99;}
-71 -> {89;90;}
-72 -> {73;}
+68 -> "Lorem\nipsum 68" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+68 -> {} [fontname="Helvetica"]
+69 -> {96;97;} [fontname="Helvetica"]
+70 -> {98;99;} [fontname="Helvetica"]
+71 -> {89;90;} [fontname="Helvetica"]
+72 -> {73;} [fontname="Helvetica"]
 73 [style="filled", fillcolor="red"]
 "Lorem\nipsum 73" [style=invis]
-73 -> "Lorem\nipsum 73" [color=white, minlen=1, taillabel="Lorem\nipsum\n73"]
-73 -> {}
-74 -> {92;93;}
+73 -> "Lorem\nipsum 73" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+73 -> {} [fontname="Helvetica"]
+74 -> {92;93;} [fontname="Helvetica"]
 75 [style="filled", fillcolor="red"]
 "Lorem\nipsum 75" [style=invis]
-75 -> "Lorem\nipsum 75" [color=white, minlen=1, taillabel="Lorem\nipsum\n75"]
-75 -> {106;}
+75 -> "Lorem\nipsum 75" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+75 -> {106;} [fontname="Helvetica"]
 76 [style="filled", fillcolor="red"]
 "Lorem\nipsum 76" [style=invis]
-76 -> "Lorem\nipsum 76" [color=white, minlen=1, taillabel="Lorem\nipsum\n76"]
-76 -> {}
+76 -> "Lorem\nipsum 76" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+76 -> {} [fontname="Helvetica"]
 77 [style="filled", fillcolor="red"]
 "Lorem\nipsum 77" [style=invis]
-77 -> "Lorem\nipsum 77" [color=white, minlen=1, taillabel="Lorem\nipsum\n77"]
-77 -> {107;}
+77 -> "Lorem\nipsum 77" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+77 -> {107;} [fontname="Helvetica"]
 78 [style="filled", fillcolor="red"]
 "Lorem\nipsum 78" [style=invis]
-78 -> "Lorem\nipsum 78" [color=white, minlen=1, taillabel="Lorem\nipsum\n78"]
-78 -> {}
-79 -> {51;}
+78 -> "Lorem\nipsum 78" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+78 -> {} [fontname="Helvetica"]
+79 -> {51;} [fontname="Helvetica"]
 80 [style="filled", fillcolor="red"]
 "Lorem\nipsum 80" [style=invis]
-80 -> "Lorem\nipsum 80" [color=white, minlen=1, taillabel="Lorem\nipsum\n80"]
-80 -> {}
-81 -> {116;117;}
-82 -> {112;114;}
+80 -> "Lorem\nipsum 80" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+80 -> {} [fontname="Helvetica"]
+81 -> {116;117;} [fontname="Helvetica"]
+82 -> {112;114;} [fontname="Helvetica"]
 83 [style="filled", fillcolor="red"]
 "Lorem\nipsum 83" [style=invis]
-83 -> "Lorem\nipsum 83" [color=white, minlen=1, taillabel="Lorem\nipsum\n83"]
-83 -> {}
-84 -> {85;}
+83 -> "Lorem\nipsum 83" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+83 -> {} [fontname="Helvetica"]
+84 -> {85;} [fontname="Helvetica"]
 85 [style="filled", fillcolor="red"]
 "Lorem\nipsum 85" [style=invis]
-85 -> "Lorem\nipsum 85" [color=white, minlen=1, taillabel="Lorem\nipsum\n85"]
-85 -> {}
+85 -> "Lorem\nipsum 85" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+85 -> {} [fontname="Helvetica"]
 86 [style="filled", fillcolor="red"]
 "Lorem\nipsum 86" [style=invis]
-86 -> "Lorem\nipsum 86" [color=white, minlen=1, taillabel="Lorem\nipsum\n86"]
-86 -> {}
-87 -> {94;95;}
+86 -> "Lorem\nipsum 86" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+86 -> {} [fontname="Helvetica"]
+87 -> {94;95;} [fontname="Helvetica"]
 88 [style="filled", fillcolor="red"]
 "Lorem\nipsum 88" [style=invis]
-88 -> "Lorem\nipsum 88" [color=white, minlen=1, taillabel="Lorem\nipsum\n88"]
-88 -> {}
-89 -> {101;103;}
-90 -> {91;}
-91 -> {100;102;}
+88 -> "Lorem\nipsum 88" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+88 -> {} [fontname="Helvetica"]
+89 -> {101;103;} [fontname="Helvetica"]
+90 -> {91;} [fontname="Helvetica"]
+91 -> {100;102;} [fontname="Helvetica"]
 92 [style="filled", fillcolor="red"]
 "Lorem\nipsum 92" [style=invis]
-92 -> "Lorem\nipsum 92" [color=white, minlen=1, taillabel="Lorem\nipsum\n92"]
-92 -> {}
-93 -> {104;105;}
+92 -> "Lorem\nipsum 92" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+92 -> {} [fontname="Helvetica"]
+93 -> {104;105;} [fontname="Helvetica"]
 94 [style="filled", fillcolor="red"]
 "Lorem\nipsum 94" [style=invis]
-94 -> "Lorem\nipsum 94" [color=white, minlen=1, taillabel="Lorem\nipsum\n94"]
-94 -> {}
-95 -> {110;111;}
+94 -> "Lorem\nipsum 94" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+94 -> {} [fontname="Helvetica"]
+95 -> {110;111;} [fontname="Helvetica"]
 96 [style="filled", fillcolor="red"]
 "Lorem\nipsum 96" [style=invis]
-96 -> "Lorem\nipsum 96" [color=white, minlen=1, taillabel="Lorem\nipsum\n96"]
-96 -> {}
+96 -> "Lorem\nipsum 96" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+96 -> {} [fontname="Helvetica"]
 97 [style="filled", fillcolor="red"]
 "Lorem\nipsum 97" [style=invis]
-97 -> "Lorem\nipsum 97" [color=white, minlen=1, taillabel="Lorem\nipsum\n97"]
-97 -> {}
+97 -> "Lorem\nipsum 97" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+97 -> {} [fontname="Helvetica"]
 98 [style="filled", fillcolor="red"]
 "Lorem\nipsum 98" [style=invis]
-98 -> "Lorem\nipsum 98" [color=white, minlen=1, taillabel="Lorem\nipsum\n98"]
-98 -> {}
-99 -> {54;}
+98 -> "Lorem\nipsum 98" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+98 -> {} [fontname="Helvetica"]
+99 -> {54;} [fontname="Helvetica"]
 100 [style="filled", fillcolor="red"]
 "Lorem\nipsum 100" [style=invis]
-100 -> "Lorem\nipsum 100" [color=white, minlen=1, taillabel="Lorem\nipsum\n100"]
-100 -> {}
+100 -> "Lorem\nipsum 100" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+100 -> {} [fontname="Helvetica"]
 101 [style="filled", fillcolor="red"]
 "Lorem\nipsum 101" [style=invis]
-101 -> "Lorem\nipsum 101" [color=white, minlen=1, taillabel="Lorem\nipsum\n101"]
-101 -> {}
+101 -> "Lorem\nipsum 101" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+101 -> {} [fontname="Helvetica"]
 102 [style="filled", fillcolor="red"]
 "Lorem\nipsum 102" [style=invis]
-102 -> "Lorem\nipsum 102" [color=white, minlen=1, taillabel="Lorem\nipsum\n102"]
-102 -> {}
+102 -> "Lorem\nipsum 102" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+102 -> {} [fontname="Helvetica"]
 103 [style="filled", fillcolor="red"]
 "Lorem\nipsum 103" [style=invis]
-103 -> "Lorem\nipsum 103" [color=white, minlen=1, taillabel="Lorem\nipsum\n103"]
-103 -> {}
+103 -> "Lorem\nipsum 103" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+103 -> {} [fontname="Helvetica"]
 104 [style="filled", fillcolor="red"]
 "Lorem\nipsum 104" [style=invis]
-104 -> "Lorem\nipsum 104" [color=white, minlen=1, taillabel="Lorem\nipsum\n104"]
-104 -> {}
+104 -> "Lorem\nipsum 104" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+104 -> {} [fontname="Helvetica"]
 105 [style="filled", fillcolor="red"]
 "Lorem\nipsum 105" [style=invis]
-105 -> "Lorem\nipsum 105" [color=white, minlen=1, taillabel="Lorem\nipsum\n105"]
-105 -> {}
+105 -> "Lorem\nipsum 105" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+105 -> {} [fontname="Helvetica"]
 106 [style="filled", fillcolor="red"]
 "Lorem\nipsum 106" [style=invis]
-106 -> "Lorem\nipsum 106" [color=white, minlen=1, taillabel="Lorem\nipsum\n106"]
-106 -> {}
-107 -> {108;}
-108 -> {109;}
+106 -> "Lorem\nipsum 106" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+106 -> {} [fontname="Helvetica"]
+107 -> {108;} [fontname="Helvetica"]
+108 -> {109;} [fontname="Helvetica"]
 109 [style="filled", fillcolor="red"]
 "Lorem\nipsum 109" [style=invis]
-109 -> "Lorem\nipsum 109" [color=white, minlen=1, taillabel="Lorem\nipsum\n109"]
-109 -> {}
+109 -> "Lorem\nipsum 109" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+109 -> {} [fontname="Helvetica"]
 110 [style="filled", fillcolor="red"]
 "Lorem\nipsum 110" [style=invis]
-110 -> "Lorem\nipsum 110" [color=white, minlen=1, taillabel="Lorem\nipsum\n110"]
-110 -> {}
+110 -> "Lorem\nipsum 110" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+110 -> {} [fontname="Helvetica"]
 111 [style="filled", fillcolor="red"]
 "Lorem\nipsum 111" [style=invis]
-111 -> "Lorem\nipsum 111" [color=white, minlen=1, taillabel="Lorem\nipsum\n111"]
-111 -> {}
-112 -> {113;}
+111 -> "Lorem\nipsum 111" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+111 -> {} [fontname="Helvetica"]
+112 -> {113;} [fontname="Helvetica"]
 113 [style="filled", fillcolor="red"]
 "Lorem\nipsum 113" [style=invis]
-113 -> "Lorem\nipsum 113" [color=white, minlen=1, taillabel="Lorem\nipsum\n113"]
-113 -> {}
-114 -> {115;}
+113 -> "Lorem\nipsum 113" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+113 -> {} [fontname="Helvetica"]
+114 -> {115;} [fontname="Helvetica"]
 115 [style="filled", fillcolor="red"]
 "Lorem\nipsum 115" [style=invis]
-115 -> "Lorem\nipsum 115" [color=white, minlen=1, taillabel="Lorem\nipsum\n115"]
-115 -> {}
+115 -> "Lorem\nipsum 115" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+115 -> {} [fontname="Helvetica"]
 116 [style="filled", fillcolor="red"]
 "Lorem\nipsum 116" [style=invis]
-116 -> "Lorem\nipsum 116" [color=white, minlen=1, taillabel="Lorem\nipsum\n116"]
-116 -> {}
+116 -> "Lorem\nipsum 116" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+116 -> {} [fontname="Helvetica"]
 117 [style="filled", fillcolor="red"]
 "Lorem\nipsum 117" [style=invis]
-117 -> "Lorem\nipsum 117" [color=white, minlen=1, taillabel="Lorem\nipsum\n117"]
-117 -> {}
+117 -> "Lorem\nipsum 117" [labelangle=0, color=white, taillabel="\nlorem", fontname="Helvetica Bold"]
+117 -> {} [fontname="Helvetica"]
 }

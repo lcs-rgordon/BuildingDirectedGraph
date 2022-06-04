@@ -2417,7 +2417,6 @@ let storyNodes = nodes.reduce(into: [Int: Node]()) {
 
 // Opening
 print("digraph img {")
-
 for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
     if let ending = node.ending {
         
@@ -2428,7 +2427,7 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
         print("\"\(ending.description) \(node.id)\" [style=invis]")
         
         // Make a label after the ending node
-        print("\(key) -> \"\(ending.description) \(node.id)\" [color=white, minlen=1, taillabel=\"\(ending.description)\\n\(node.id)\"]")
+        print("\(key) -> \"\(ending.description) \(node.id)\" [labelangle=0, color=white, taillabel=\"\\nlorem\", fontname=\"Helvetica Bold\"]")
     }
         
     print("\(key) -> {", terminator: "")
