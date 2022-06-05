@@ -266,5 +266,5 @@ subgraph { "title" [shape=none label=<<table border="0">
 "Leader of\nsuccessful revolt 117" [style=invis]
 117 -> "Leader of\nsuccessful revolt 117" [labelangle=0, minlen=3,  color=white, taillabel="\nLeader of\nsuccessful revolt", fontname="Helvetica Bold"]
 117 -> {} [minlen=2]
-}
 
+}

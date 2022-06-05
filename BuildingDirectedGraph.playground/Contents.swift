@@ -2471,26 +2471,52 @@ let storyNodes = nodes.reduce(into: [Int: Node]()) {
 //print(dump(storyNodes))
 
 // Opening
-print("digraph img {")
+var output = "digraph \"[map]\" {\n"
+output += "subgraph { \"title\" [shape=none label=<<table border=\"0\">\n"
+output += "  <tr>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"40\"><b>Journey Under The Sea</b></font></td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\">By R. A. Montgomery</font></td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td> </td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">CHOOSE YOUR OWN ADVENTURE #2</font></td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td>&nbsp;</td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\"><b>Analysis of endings</b></font></td>\n"
+output += "  </tr>\n"
+output += "</table>>]\n"
+output += "}\n"
 for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
     if let ending = node.ending {
         
         // Make ending nodes show up in red
-        print("\(key) [style=\"filled\", fillcolor=\"\(ending.color)\"]")
+        output += "\(key) [style=\"filled\", fillcolor=\"\(ending.color)\"]\n"
         
         // Create an invisible node after each ending node
-        print("\"\(ending.description) \(node.id)\" [style=invis]")
+        output += "\"\(ending.description) \(node.id)\" [style=invis]\n"
         
         // Make a label after the ending node
-        print("\(key) -> \"\(ending.description) \(node.id)\" [labelangle=0, minlen=3,  color=white, taillabel=\"\\n\(ending.description)\", fontname=\"Helvetica Bold\"]")
+        output += "\(key) -> \"\(ending.description) \(node.id)\" [labelangle=0, minlen=3,  color=white, taillabel=\"\\n\(ending.description)\", fontname=\"Helvetica Bold\"]\n"
     }
         
-    print("\(key) -> {", terminator: "")
+    output += "\(key) -> {"
     for edge in node.edges {
-        print("\(edge.destinationId);", terminator: "")
+        output += "\(edge.destinationId);"
     }
-    print("} [minlen=2]")
+    output += "} [minlen=2]\n"
 }
 
 // Closing
-print("}")
+output += "}\n"
+
+print(output)
