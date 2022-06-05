@@ -488,7 +488,8 @@ let nodes: [Node] = [
          ],
          image: "node-20",
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Severe case\\nof the bends"))
+         ending: Ending(classification: .disappointing,
+                        description: "Severe case\\nof the bends"))
     
     ,
     
@@ -526,7 +527,8 @@ let nodes: [Node] = [
          ],
          image: "node-22",
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Eaten by\\nlarge shark"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Eaten by\\nlarge shark"))
     
     ,
     
@@ -538,7 +540,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Crushed by\\nimplosion"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Crushed by\\nimplosion"))
     
     ,
     
@@ -550,7 +553,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Drowned in\\ncavern"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Drowned in\\ncavern"))
     
     ,
     
@@ -689,7 +693,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Killed by\\nsea snake"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Killed by\\nsea snake"))
     ,
     
     Node(id: 31,
@@ -702,7 +707,8 @@ let nodes: [Node] = [
          ],
          image: "node-31",
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Someone else\\n discovers Atlantis"))
+         ending: Ending(classification: .disappointing,
+                        description: "Someone else\\n discovers Atlantis"))
     
     ,
     
@@ -831,7 +837,8 @@ let nodes: [Node] = [
          ],
          image: "node-36",
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Eaten by\\nhuge ugly fish"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Eaten by\\nhuge ugly fish"))
     
     ,
     
@@ -871,7 +878,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .favorable, description: "You join\\nthe Atlanteans"))
+         ending: Ending(classification: .favorable,
+                        description: "You join\\nthe Atlanteans"))
     
     ,
     
@@ -1101,7 +1109,8 @@ let nodes: [Node] = [
          ],
          image: "node-49",
          edges: [],
-         ending: Ending(classification: .favorable, description: "Saved by\\nhelicopter"))
+         ending: Ending(classification: .favorable,
+                        description: "Saved by\\nhelicopter"))
     
     ,
     
@@ -1303,7 +1312,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .favorable, description: "Can breath underwater;\\nyou join Atlanteans"))
+         ending: Ending(classification: .favorable,
+                        description: "Can breath underwater;\\nyou join Atlanteans"))
     
     ,
     
@@ -1319,7 +1329,8 @@ let nodes: [Node] = [
          ],
          image: "node-58",
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Survive, but\\nin Atlantean zoo"))
+         ending: Ending(classification: .disappointing,
+                        description: "Survive, but\\nin Atlantean zoo"))
     
     ,
     
@@ -1410,8 +1421,9 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Survive\\nbut eyesight damaged"))
-    
+         ending: Ending(classification: .disappointing,
+                        description: "Survive but\\neyesight damaged"))
+
     ,
     
     Node(id: 63,
@@ -1542,7 +1554,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .mediocre, description: "Survive, but all\\nequipment lost"))
+         ending: Ending(classification: .mediocre,
+                        description: "Survive, but all\\nequipment lost"))
     
     ,
     
@@ -1649,7 +1662,8 @@ let nodes: [Node] = [
          ],
          image: "node-72",
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Frozen for\\n23 years"))
+         ending: Ending(classification: .disappointing,
+                        description: "Frozen for\\n23 years"))
     
     ,
     
@@ -1694,8 +1708,9 @@ let nodes: [Node] = [
                  prompt: "*If you don't like this ending, turn to page 106.*")
             
          ],
-         ending: Ending(classification: .favorable, description: "Find Atlantis\\nbut hide discovery"))
-    
+         ending: Ending(classification: .favorable,
+                        description: "Give up search;\\nbecome astronomer"))
+
     ,
     
     Node(id: 76,
@@ -1710,7 +1725,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .mediocre, description: "Survive but\\nwith Nodoors"))
+         ending: Ending(classification: .mediocre,
+                        description: "Survive but\\nwith Nodoors"))
     
     ,
     
@@ -1729,7 +1745,8 @@ let nodes: [Node] = [
                  prompt: "*If you don't like this ending, turn to page 107.*")
             
          ],
-         ending: Ending(classification: .disappointing, description: "Survive as\\nNodoor spy"))
+         ending: Ending(classification: .disappointing,
+                        description: "Survive as\\nNodoor spy"))
     
     ,
     
@@ -1747,7 +1764,8 @@ let nodes: [Node] = [
          ],
          image: "node-78",
          edges: [],
-         ending: Ending(classification: .favorable, description: "Find Atlantis;\\nbecome farmer"))
+         ending: Ending(classification: .favorable,
+                        description: "Find Atlantis;\\nstudy their history"))
     
     ,
     
@@ -1782,7 +1800,8 @@ let nodes: [Node] = [
          ],
          image: "node-80",
          edges: [],
-         ending: Ending(classification: .great, description: "Become advisor\\nto a king"))
+         ending: Ending(classification: .great,
+                        description: "Become advisor\\nto a king"))
     
     ,
     
@@ -1850,7 +1869,8 @@ let nodes: [Node] = [
          ],
          image: "node-83",
          edges: [],
-         ending: Ending(classification: .mediocre, description: "Rescued\\nby search helicopter"))
+         ending: Ending(classification: .mediocre,
+                        description: "Saved by\\nwhale"))
     
     ,
     
@@ -1883,7 +1903,8 @@ let nodes: [Node] = [
          ],
          image: "node-84",
          edges: [],
-         ending: Ending(classification: .great, description: "Assist with successful\\nAtlantean uprising"))
+         ending: Ending(classification: .great,
+                        description: "Assist with successful\\nAtlantean uprising"))
     
     ,
     
@@ -1897,7 +1918,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .favorable, description: "Rescued by\\nmysterious sub"))
+         ending: Ending(classification: .favorable,
+                        description: "Rescued by\\nmysterious sub"))
     
     ,
     
@@ -1937,7 +1959,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .mediocre, description: "Storm damage to\\n ship, abandoned search"))
+         ending: Ending(classification: .mediocre,
+                        description: "Storm damage to\\n ship, abandoned search"))
     
     ,
     
@@ -2025,7 +2048,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Destroyed by\\nblinding flash"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Killed by a\\nblinding flash"))
     
     ,
     
@@ -2065,7 +2089,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Die floating\\nin vast sea"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Die floating\\nin vast sea"))
     
     ,
     
@@ -2115,7 +2140,8 @@ let nodes: [Node] = [
          ],
          image: "node-96",
          edges: [],
-         ending: Ending(classification: .favorable, description: "Rescued by\\nMaray crew"))
+         ending: Ending(classification: .favorable,
+                        description: "Rescued by\\nMaray crew"))
     
     ,
     
@@ -2127,8 +2153,9 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Die after\\n search helicopter\\nmisses you"))
-    
+         ending: Ending(classification: .catastrophic,
+                        description: "Search\\nhelicopter\\nmisses you"))
+
     ,
     
     Node(id: 98,
@@ -2139,7 +2166,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .favorable, description: "Whirlpool releases\\nyou near the Maray"))
+         ending: Ending(classification: .favorable,
+                        description: "Whirlpool releases\\nyou near the Maray"))
     
     ,
     
@@ -2176,7 +2204,8 @@ let nodes: [Node] = [
          ],
          image: "node-100",
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Reluctantly become a\\nbeing of pure energy"))
+         ending: Ending(classification: .disappointing,
+                        description: "Reluctantly become a\\nbeing of pure energy"))
     
     ,
     
@@ -2188,7 +2217,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .favorable, description: "Become an\\n underwater\\nsea farmer"))
+         ending: Ending(classification: .favorable,
+                        description: "Become an\\n underwater\\nsea farmer"))
     
     ,
     
@@ -2202,7 +2232,8 @@ let nodes: [Node] = [
          ],
          image: "node-102",
          edges: [],
-         ending: Ending(classification: .great, description: "Choose to become\\nbeing of pure energy"))
+         ending: Ending(classification: .great,
+                        description: "Choose to become\\nbeing of pure energy"))
     
     ,
     
@@ -2214,8 +2245,9 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .great, description: "Become popular\\nAtlantean musician"))
-    
+         ending: Ending(classification: .great,
+                        description: "Study\\nAtlantean\\nmusic"))
+
     ,
     
     Node(id: 104,
@@ -2226,8 +2258,9 @@ let nodes: [Node] = [
          ],
          image: "node-104",
          edges: [],
-         ending: Ending(classification: .mediocre, description: "Released after\\nfinding secret\\nmilitary base"))
-    
+         ending: Ending(classification: .mediocre,
+                        description: "Find secret\\nmilitary base;\\nreleased"))
+
     ,
     
     Node(id: 105,
@@ -2242,7 +2275,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .disappointing, description: "77 in\\nmilitary base"))
+         ending: Ending(classification: .disappointing,
+                        description: "Imprisoned in\\nmilitary base"))
     
     ,
     
@@ -2256,7 +2290,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .great, description: "Find Atlantis\\nafter major storm"))
+         ending: Ending(classification: .great,
+                        description: "Find Atlantis\\nafter major storm"))
     
     ,
     
@@ -2304,7 +2339,8 @@ let nodes: [Node] = [
          ],
          image: "node-108",
          edges: [],
-         ending: Ending(classification: .catastrophic, description: "Vaporized\\nby guards"))
+         ending: Ending(classification: .catastrophic,
+                        description: "Vaporized\\nby guards"))
     
     ,
     
@@ -2318,7 +2354,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .favorable, description: "Survive 1,000\\nyears in future"))
+         ending: Ending(classification: .favorable,
+                        description: "Survive 1,000\\nyears in future"))
     
     ,
     
@@ -2330,7 +2367,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .great, description: "Become thought\\ntraveller in future"))
+         ending: Ending(classification: .great,
+                        description: "Become thought\\ntraveller in future"))
     
     ,
     
@@ -2359,7 +2397,8 @@ let nodes: [Node] = [
          ],
          image: "node-112",
          edges: [],
-         ending: Ending(classification: .favorable, description: "Survive underwater\\nflood"))
+         ending: Ending(classification: .favorable,
+                        description: "Survive underwater\\nflood"))
     
     ,
     
@@ -2387,7 +2426,8 @@ let nodes: [Node] = [
          ],
          image: "node-114",
          edges: [],
-         ending: Ending(classification: .favorable, description: "Escape to\\nsurface and rescued"))
+         ending: Ending(classification: .favorable,
+                        description: "Escape to\\nsurface and rescued"))
     
     ,
     
@@ -2399,7 +2439,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .disappointing, description: "Thrown in\\ndungeon"))
+         ending: Ending(classification: .disappointing,
+                        description: "Thrown in\\ndungeon"))
     
     ,
     
@@ -2415,7 +2456,8 @@ let nodes: [Node] = [
          ],
          image: nil,
          edges: [],
-         ending: Ending(classification: .great, description: "Leader of\\nsuccessful revolt"))
+         ending: Ending(classification: .great,
+                        description: "Leader of\\nsuccessful revolt"))
     
     ,
     
