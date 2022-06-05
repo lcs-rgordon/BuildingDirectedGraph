@@ -1,22 +1,19 @@
 digraph "[map]" {
 subgraph { "title" [shape=none label=<<table border="0">
   <tr>
-    <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="40"><b>Journey Under The Sea</b></font></td>
+    <td align="left"><font face="Verdana,Helvetica" point-size="40"><b>Journey Under The Sea</b></font></td>
   </tr>
   <tr>
-    <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="20">By R. A. Montgomery</font></td>
+    <td align="left"><font face="Verdana,Helvetica" point-size="20">By R. A. Montgomery</font></td>
   </tr>
   <tr>
-    <td colspan="2">&nbsp;</td>
+    <td>&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="16">CHOOSE YOUR OWN ADVENTURE #2</font></td>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">CHOOSE YOUR OWN ADVENTURE #2</font></td>
   </tr>
   <tr>
-    <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="16">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>
-  </tr>
-  <tr>
-    <td colspan="2">&nbsp;</td>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>
   </tr>
 </table>>]
 }
@@ -268,19 +265,19 @@ subgraph { "endings" [shape=none label=<<table border="0">
     <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="20"><b>Analysis of endings</b></font></td>
   </tr>
   <tr>
-<td align="right"><font face="Verdana,Helvetica" point-size="16">~greatCount~</font></td>    <td align="left"><font face="Verdana,Helvetica" point-size="16" color="#90C8E0"><b>Great</b></font></td>
+<td align="right" valign="top"><font face="Verdana,Helvetica" point-size="16">7</font></td>    <td align="left" valign="bottom"><font face="Verdana,Helvetica" point-size="18" color="#90C8E0"><b>Great</b></font></td>
   </tr>
   <tr>
-<td align="right"><font face="Verdana,Helvetica" point-size="16">~favorableCount~</font></td>    <td align="left"><font face="Verdana,Helvetica" point-size="16" color="#FFDE5F"><b>Favorable</b></font></td>
+<td align="right" valign="top"><font face="Verdana,Helvetica" point-size="16">12</font></td>    <td align="left" valign="bottom"><font face="Verdana,Helvetica" point-size="18" color="#FFDE5F"><b>Favorable</b></font></td>
   </tr>
   <tr>
-<td align="right"><font face="Verdana,Helvetica" point-size="16">~mediocreCount~</font></td>    <td align="left"><font face="Verdana,Helvetica" point-size="16" color="#D7883C"><b>Mediocre</b></font></td>
+<td align="right" valign="top"><font face="Verdana,Helvetica" point-size="16">5</font></td>    <td align="left" valign="bottom"><font face="Verdana,Helvetica" point-size="18" color="#D7883C"><b>Mediocre</b></font></td>
   </tr>
   <tr>
-<td align="right"><font face="Verdana,Helvetica" point-size="16">~disappointingCount~</font></td>    <td align="left"><font face="Verdana,Helvetica" point-size="16" color="#C1531E"><b>Disappointing</b></font></td>
+<td align="right" valign="top"><font face="Verdana,Helvetica" point-size="16">9</font></td>    <td align="left" valign="bottom"><font face="Verdana,Helvetica" point-size="18" color="#C1531E"><b>Disappointing</b></font></td>
   </tr>
   <tr>
-<td align="right"><font face="Verdana,Helvetica" point-size="16">~catastrophicCount~</font></td>    <td align="left"><font face="Verdana,Helvetica" point-size="16" color="#AB1800"><b>Catastrophic</b></font></td>
+<td align="right" valign="top"><font face="Verdana,Helvetica" point-size="16">9</font></td>    <td align="left" valign="bottom"><font face="Verdana,Helvetica" point-size="18" color="#AB1800"><b>Catastrophic</b></font></td>
   </tr>
 </table>>]
 }

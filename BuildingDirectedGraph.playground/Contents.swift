@@ -2474,27 +2474,27 @@ var output = "digraph \"[map]\" {\n"
 // Start subgraph which contains table that comprises title section
 output += "subgraph { \"title\" [shape=none label=<<table border=\"0\">\n"
 output += "  <tr>\n"
-output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"40\"><b>Journey Under The Sea</b></font></td>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"40\"><b>Journey Under The Sea</b></font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\">By R. A. Montgomery</font></td>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\">By R. A. Montgomery</font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td colspan=\"2\">&nbsp;</td>\n"
+output += "    <td>&nbsp;</td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">CHOOSE YOUR OWN ADVENTURE #2</font></td>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">CHOOSE YOUR OWN ADVENTURE #2</font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>\n"
-output += "  </tr>\n"
-output += "  <tr>\n"
-output += "    <td colspan=\"2\">&nbsp;</td>\n"
+output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>\n"
 output += "  </tr>\n"
 
 // End the table that comprises title section
 output += "</table>>]\n"
 output += "}\n"
+
+// Make empty dictionary to track endings
+var endingsCount = [String : Int]()
 
 // Build the graph itself from a sorted list of the nodes
 for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
@@ -2511,6 +2511,14 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
         // Make a label after the ending node
         output += "\(key) -> \"\(ending.description) \(node.id)\" [labelangle=0, minlen=3,  color=white, taillabel=\"\\n\(ending.description)\", fontname=\"Helvetica Bold\"]\n"
         
+        // Track endings by category
+        if let valueForKey = endingsCount[ending.classification.rawValue] {
+            // Increment count of endings of this type
+            endingsCount[ending.classification.rawValue]! = valueForKey + 1
+        } else {
+            // Start count of endings of this type
+            endingsCount[ending.classification.rawValue] = 1
+        }
     }
         
     // Draw nodes and edges between nodes
@@ -2529,9 +2537,16 @@ output += "  </tr>\n"
 
 // Make placeholders for counts of ending types
 for enumerationCase in EndingClassification.allCases {
+    
+    // Get count of endings for this ending type
+    var countForThisEndingType = 0
+    if let count = endingsCount[enumerationCase.rawValue] {
+        countForThisEndingType = count
+    }
+    
     output += "  <tr>\n"
-    output += "<td align=\"right\"><font face=\"Verdana,Helvetica\" point-size=\"16\">~\(enumerationCase.rawValue.lowercased())Count~</font></td>"
-    output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\" color=\"\(Ending.init(classification: enumerationCase, description: "").color)\"><b>\(enumerationCase.rawValue)</b></font></td>\n"
+    output += "<td align=\"right\" valign=\"top\"><font face=\"Verdana,Helvetica\" point-size=\"16\">\(countForThisEndingType)</font></td>"
+    output += "    <td align=\"left\" valign=\"bottom\"><font face=\"Verdana,Helvetica\" point-size=\"18\" color=\"\(Ending.init(classification: enumerationCase, description: "").color)\"><b>\(enumerationCase.rawValue)</b></font></td>\n"
     output += "  </tr>\n"
 }
 
