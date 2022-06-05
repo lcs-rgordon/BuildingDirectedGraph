@@ -17,8 +17,8 @@ struct Node: Identifiable {
     let ending: Ending?
 }
 
-enum EndingClassification: String {
-    case great = "Great, you won!"
+enum EndingClassification: String, CaseIterable {
+    case great = "Great"
     case favorable = "Favorable"
     case mediocre = "Mediocre"
     case disappointing = "Disappointing"
@@ -2463,15 +2463,15 @@ let nodes: [Node] = [
     
 ]
 
-// Array to dictionary
+// Change array into dictionary
 let storyNodes = nodes.reduce(into: [Int: Node]()) {
     $0[$1.id] = $1
 }
 
-//print(dump(storyNodes))
-
-// Opening
+// Opening of graph
 var output = "digraph \"[map]\" {\n"
+
+// Start subgraph which contains table that comprises title section
 output += "subgraph { \"title\" [shape=none label=<<table border=\"0\">\n"
 output += "  <tr>\n"
 output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"40\"><b>Journey Under The Sea</b></font></td>\n"
@@ -2494,9 +2494,22 @@ output += "  </tr>\n"
 output += "  <tr>\n"
 output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\"><b>Analysis of endings</b></font></td>\n"
 output += "  </tr>\n"
+
+// Make placeholders for counts of ending types
+for enumerationCase in EndingClassification.allCases {
+    output += "  <tr>\n"
+    output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">~\(enumerationCase.rawValue.lowercased())Count~ <font color=\"\(Ending.init(classification: enumerationCase, description: "").color)\"><b>\(enumerationCase.rawValue)</b></font></font></td>\n"
+    output += "  </tr>\n"
+}
+
+// End the table that comprises title section
 output += "</table>>]\n"
 output += "}\n"
+
+// Build the graph itself from a sorted list of the nodes
 for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
+    
+    // Handle ending nodes
     if let ending = node.ending {
         
         // Make ending nodes show up in red
@@ -2509,6 +2522,7 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
         output += "\(key) -> \"\(ending.description) \(node.id)\" [labelangle=0, minlen=3,  color=white, taillabel=\"\\n\(ending.description)\", fontname=\"Helvetica Bold\"]\n"
     }
         
+    // Draw nodes and edges between nodes
     output += "\(key) -> {"
     for edge in node.edges {
         output += "\(edge.destinationId);"
@@ -2516,7 +2530,7 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
     output += "} [minlen=2]\n"
 }
 
-// Closing
+// Close out the graph
 output += "}\n"
 
 print(output)

@@ -21,6 +21,21 @@ subgraph { "title" [shape=none label=<<table border="0">
   <tr>
     <td align="left"><font face="Verdana,Helvetica" point-size="16"><b>Analysis of endings</b></font></td>
   </tr>
+  <tr>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">~greatCount~ <font color="#90C8E0"><b>Great</b></font></font></td>
+  </tr>
+  <tr>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">~favorableCount~ <font color="#FFDE5F"><b>Favorable</b></font></font></td>
+  </tr>
+  <tr>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">~mediocreCount~ <font color="#D7883C"><b>Mediocre</b></font></font></td>
+  </tr>
+  <tr>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">~disappointingCount~ <font color="#C1531E"><b>Disappointing</b></font></font></td>
+  </tr>
+  <tr>
+    <td align="left"><font face="Verdana,Helvetica" point-size="16">~catastrophicCount~ <font color="#AB1800"><b>Catastrophic</b></font></font></td>
+  </tr>
 </table>>]
 }
 1 -> {2;} [minlen=2]
