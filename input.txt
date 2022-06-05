@@ -262,6 +262,12 @@ subgraph { "title" [shape=none label=<<table border="0">
 117 -> {} [minlen=2]
 subgraph { "endings" [shape=none label=<<table border="0">
   <tr>
+    <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="20"><b>&nbsp;</b></font></td>
+  </tr>
+  <tr>
+    <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="20"><b>&nbsp;</b></font></td>
+  </tr>
+  <tr>
     <td colspan="2" align="left"><font face="Verdana,Helvetica" point-size="20"><b>Analysis of endings</b></font></td>
   </tr>
   <tr>

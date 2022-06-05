@@ -2532,6 +2532,12 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
 // Start subgraph which endings analysis
 output += "subgraph { \"endings\" [shape=none label=<<table border=\"0\">\n"
 output += "  <tr>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\"><b>&nbsp;</b></font></td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\"><b>&nbsp;</b></font></td>\n"
+output += "  </tr>\n"
+output += "  <tr>\n"
 output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\"><b>Analysis of endings</b></font></td>\n"
 output += "  </tr>\n"
 
