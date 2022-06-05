@@ -2,19 +2,20 @@ digraph "[map]" {
 subgraph { "title" [shape=none label=<<table border="0">
   <tr>
     <td align="left"><font face="Verdana,Helvetica" point-size="40"><b>Journey Under The Sea</b></font></td>
+    <td width="100"></td>
   </tr>
   <tr>
     <td align="left"><font face="Verdana,Helvetica" point-size="20">By R. A. Montgomery</font></td>
-  </tr>
+    <td></td>  </tr>
   <tr>
     <td>&nbsp;</td>
-  </tr>
+    <td></td>  </tr>
   <tr>
     <td align="left"><font face="Verdana,Helvetica" point-size="16">CHOOSE YOUR OWN ADVENTURE #2</font></td>
-  </tr>
+    <td></td>  </tr>
   <tr>
     <td align="left"><font face="Verdana,Helvetica" point-size="16">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>
-  </tr>
+    <td></td>  </tr>
 </table>>]
 }
 1 -> {2;} [minlen=2]
