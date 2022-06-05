@@ -2474,33 +2474,23 @@ var output = "digraph \"[map]\" {\n"
 // Start subgraph which contains table that comprises title section
 output += "subgraph { \"title\" [shape=none label=<<table border=\"0\">\n"
 output += "  <tr>\n"
-output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"40\"><b>Journey Under The Sea</b></font></td>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"40\"><b>Journey Under The Sea</b></font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\">By R. A. Montgomery</font></td>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\">By R. A. Montgomery</font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td> </td>\n"
+output += "    <td colspan=\"2\">&nbsp;</td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">CHOOSE YOUR OWN ADVENTURE #2</font></td>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">CHOOSE YOUR OWN ADVENTURE #2</font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">Chooseco LLC, Waitsfield, Vermont, 2006</font></td>\n"
 output += "  </tr>\n"
 output += "  <tr>\n"
-output += "    <td>&nbsp;</td>\n"
+output += "    <td colspan=\"2\">&nbsp;</td>\n"
 output += "  </tr>\n"
-output += "  <tr>\n"
-output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\"><b>Analysis of endings</b></font></td>\n"
-output += "  </tr>\n"
-
-// Make placeholders for counts of ending types
-for enumerationCase in EndingClassification.allCases {
-    output += "  <tr>\n"
-    output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\">~\(enumerationCase.rawValue.lowercased())Count~ <font color=\"\(Ending.init(classification: enumerationCase, description: "").color)\"><b>\(enumerationCase.rawValue)</b></font></font></td>\n"
-    output += "  </tr>\n"
-}
 
 // End the table that comprises title section
 output += "</table>>]\n"
@@ -2520,6 +2510,7 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
         
         // Make a label after the ending node
         output += "\(key) -> \"\(ending.description) \(node.id)\" [labelangle=0, minlen=3,  color=white, taillabel=\"\\n\(ending.description)\", fontname=\"Helvetica Bold\"]\n"
+        
     }
         
     // Draw nodes and edges between nodes
@@ -2529,6 +2520,24 @@ for (key, node) in storyNodes.sorted(by: { lhs, rhs in lhs.key < rhs.key }) {
     }
     output += "} [minlen=2]\n"
 }
+
+// Start subgraph which endings analysis
+output += "subgraph { \"endings\" [shape=none label=<<table border=\"0\">\n"
+output += "  <tr>\n"
+output += "    <td colspan=\"2\" align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"20\"><b>Analysis of endings</b></font></td>\n"
+output += "  </tr>\n"
+
+// Make placeholders for counts of ending types
+for enumerationCase in EndingClassification.allCases {
+    output += "  <tr>\n"
+    output += "<td align=\"right\"><font face=\"Verdana,Helvetica\" point-size=\"16\">~\(enumerationCase.rawValue.lowercased())Count~</font></td>"
+    output += "    <td align=\"left\"><font face=\"Verdana,Helvetica\" point-size=\"16\" color=\"\(Ending.init(classification: enumerationCase, description: "").color)\"><b>\(enumerationCase.rawValue)</b></font></td>\n"
+    output += "  </tr>\n"
+}
+
+// End the table that comprises title section
+output += "</table>>]\n"
+output += "}\n"
 
 // Close out the graph
 output += "}\n"
